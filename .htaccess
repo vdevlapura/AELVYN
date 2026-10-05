@@ -1,0 +1,30 @@
+# Aelvyn site settings for Hostinger (Apache / LiteSpeed)
+
+# Always use HTTPS and the bare domain (www.aelvyn.com -> aelvyn.com)
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://aelvyn.com%{REQUEST_URI} [L,R=301]
+
+# Hide the internal git folder if the site is deployed from GitHub
+RedirectMatch 404 /\.git
+
+# Custom not-found page
+ErrorDocument 404 /404.html
+
+# Basic security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Cache images and fonts for a month, CSS/JS for a week
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
