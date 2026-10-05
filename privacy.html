@@ -10,10 +10,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt="">aelvyn</a>
-    <ul class="nav-links"><li><a class="btn btn-primary" href="index.html#early-access">Get early access</a></li></ul>
+    <a class="brand" href="index.html" aria-label="Aelvyn home"><img src="assets/logo-mark.svg" alt="">aelvyn</a>
+    <ul class="nav-links">
+      <li><a href="index.html#product">Product</a></li>
+      <li><a href="index.html#use-cases">Use cases</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn-primary" href="index.html#early-access">Get early access</a></li>
+    </ul>
   </div>
 </header>
 
@@ -62,12 +70,32 @@
 
 <footer>
   <div class="container">
-    <div class="footer-grid">
-      <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt="">aelvyn</a>
-      <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:hello@aelvyn.com">Contact</a></nav>
+    <div class="footer-cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt="">aelvyn</a>
+        <p>AI agents that handle the busywork for growing businesses in the UAE and GCC.</p>
+        <a class="social" href="https://www.linkedin.com/company/aelvyn" target="_blank" rel="noopener" aria-label="Aelvyn on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg></a>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul><li><a href="index.html#product">Agents</a></li><li><a href="index.html#use-cases">Use cases</a></li><li><a href="index.html#trust">Security</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@aelvyn.com">hello@aelvyn.com</a></li>
+          <li><a href="tel:+97142353931">+971 4 235 3931</a></li>
+          <li>Office 611, Office Court Building<br>Oud Metha, Dubai, UAE</li>
+        </ul>
+      </div>
     </div>
-    <div class="copyright">© 2026 Aelvyn. Office 611, Office Court Building, Oud Metha, Dubai, UAE. Tel: <a href="tel:+97142353931">+971 4 235 3931</a></div>
+    <div class="copyright">© <span id="year">2026</span> Aelvyn. All rights reserved.</div>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

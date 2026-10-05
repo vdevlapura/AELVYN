@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aelvyn.com/</loc><lastmod>2026-10-04</lastmod></url>
-  <url><loc>https://aelvyn.com/privacy.html</loc><lastmod>2026-10-04</lastmod></url>
-  <url><loc>https://aelvyn.com/terms.html</loc><lastmod>2026-10-04</lastmod></url>
+  <url><loc>https://aelvyn.com/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/about.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/contact.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/blog.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/blog-back-office-tasks-ai-agents.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/blog-why-our-agents-ask-first.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/privacy.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://aelvyn.com/terms.html</loc><lastmod>2026-10-05</lastmod></url>
 </urlset>
