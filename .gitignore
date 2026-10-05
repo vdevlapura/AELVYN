@@ -1,0 +1,8 @@
+# Internal notes, not part of the public website
+LINKEDIN.md
+GUHAN-LINKEDIN.md
+brand/*.html
+
+# Local tooling
+.claude/
+.DS_Store
