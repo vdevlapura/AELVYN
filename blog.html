@@ -1,88 +1,150 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog | Aelvyn</title>
-  <meta name="description" content="Notes from Aelvyn on AI agents, operations automation and running growing businesses in the UAE.">
+  <title>Notes, Aelvyn</title>
+  <meta name="description" content="Short notes from building Aelvyn: what the agents do, what they wait for, and why.">
   <link rel="canonical" href="https://aelvyn.com/blog.html">
   <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
-  <meta property="og:title" content="Blog | Aelvyn">
-  <meta property="og:description" content="Notes from Aelvyn on AI agents, operations automation and running growing businesses in the UAE.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Notes, Aelvyn">
+  <meta property="og:description" content="Short notes from building Aelvyn: what the agents do, what they wait for, and why.">
+  <meta property="og:url" content="https://aelvyn.com/blog.html">
   <meta property="og:image" content="https://aelvyn.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Aelvyn","url":"https://aelvyn.com/","logo":"https://aelvyn.com/assets/logo.svg","email":"hello@aelvyn.com","telephone":"+971 4 235 3931","foundingDate":"2026-10","address":{"@type":"PostalAddress","streetAddress":"Office 611, Office Court Building, Oud Metha","addressLocality":"Dubai","addressCountry":"AE"},"sameAs":["https://www.linkedin.com/company/aelvyn"]}
+  </script>
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
 <header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Aelvyn home"><img src="assets/logo-mark.svg" alt="">aelvyn</a>
-    <ul class="nav-links">
-      <li><a href="index.html#product">Product</a></li>
-      <li><a href="index.html#use-cases">Use cases</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a class="active" href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn btn-primary" href="index.html#early-access">Get early access</a></li>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Aelvyn, home">
+      <span class="brand-word">aelvyn</span>
+    </a>
+    <nav class="nav" aria-label="Site">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html#the-work">Product</a></li>
+        <li><a class="nav-link" href="index.html#control">Control</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link is-current" aria-current="page" href="blog.html">Notes</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-secondary" href="index.html#early-access">Request early access</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel">Menu</button>
+    </nav>
+  </div>
+  <div class="nav-panel" id="nav-panel" role="navigation" aria-label="Site menu">
+    <ul>
+      <li><a class="nav-link" href="index.html#the-work">Product</a></li>
+      <li><a class="nav-link" href="index.html#control">Control</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link is-current" aria-current="page" href="blog.html">Notes</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
+    <a class="btn btn-primary" href="index.html#early-access">Request early access</a>
   </div>
 </header>
 
-<main>
-  <section class="page-head">
+<main id="top" tabindex="-1">
+  <section class="page-head" aria-labelledby="page-title">
     <div class="container">
-      <span class="eyebrow">Blog</span>
-      <h1>Notes on AI and operations</h1>
-      <p class="lead">What we are learning while building AI agents for growing businesses in the UAE.</p>
+      <div class="masthead" aria-hidden="true">
+        <span><span class="mast-full">Notes</span><span class="mast-mobile">Notes, Dubai, 2026</span></span>
+        <span>Dubai, United Arab Emirates</span>
+        <span>2026</span>
+      </div>
+      <div class="grid mt-8">
+        <h1 class="g1-9 h1-inner" id="page-title">Notes.</h1>
+        <p class="g1-7 lead mt-3">Short notes from building Aelvyn. What the agents do, what they wait for, and why.</p>
+      </div>
     </div>
   </section>
-  <section>
+
+  <section class="section notes-index" aria-label="All notes">
     <div class="container">
-      <div class="grid grid-3" style="margin-top:0">
-        <a class="card post-card" href="blog-back-office-tasks-ai-agents.html">
-          <div class="post-meta">October 5, 2026 · 6 min read</div>
-          <h3>Five back-office tasks growing UAE businesses can hand to AI agents</h3>
-          <p>Where AI agents can realistically save time for small and mid-sized businesses in the UAE today, and where people should stay in charge.</p>
-        </a>
-        <a class="card post-card" href="blog-why-our-agents-ask-first.html">
-          <div class="post-meta">October 5, 2026 · 4 min read</div>
-          <h3>Why every AI agent we build asks before it acts</h3>
-          <p>Human approval is not a limitation of AI agents. For business operations it is the feature that makes them safe to use.</p>
-        </a>
+      <div class="grid notes-head" aria-hidden="true">
+        <span class="g1-2 label">No.</span>
+        <span class="g3-4 label">Published</span>
+        <span class="g5-12 label">Note</span>
       </div>
+      <div class="rows posts" role="list">
+        <div class="grid row" role="listitem">
+          <span class="g1-2 num">01</span>
+          <span class="g3-4 mono"><span class="visually-hidden">Published </span><time datetime="2026-10-19">19 Oct 2026</time></span>
+          <div class="g5-12">
+            <a class="post-title" href="blog-back-office-tasks-ai-agents.html">Five back-office tasks a UAE business can hand to an agent<span class="visually-hidden">, read the note</span></a>
+            <p class="post-stand">Five pieces of weekly admin an agent can prepare for a business of 5 to 200 people, with what it reads, what it drafts and what it waits for, task by&nbsp;task.</p>
+            <span class="post-by mono">Aelvyn. About 7 minutes to read.</span>
+          </div>
+        </div>
+        <div class="grid row" role="listitem">
+          <span class="g1-2 num">02</span>
+          <span class="g3-4 mono"><span class="visually-hidden">Published </span><time datetime="2026-10-19">19 Oct 2026</time></span>
+          <div class="g5-12">
+            <a class="post-title" href="blog-why-our-agents-ask-first.html">Why every AI agent we build asks before it acts<span class="visually-hidden">, read the note</span></a>
+            <p class="post-stand">The case for approval by default. What goes wrong when a system posts without a person, and the three rules that follow from&nbsp;it.</p>
+            <span class="post-by mono">Aelvyn. About 6 minutes to read.</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="footnote mono">Two notes so far, numbered in order of publication. Reading times are estimates at about 200 words a minute. Next note: reading a UAE tax invoice, field by field.</p>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer-cols">
-      <div>
-        <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt="">aelvyn</a>
-        <p>AI agents that handle the busywork for growing businesses in the UAE and GCC.</p>
-        <a class="social" href="https://www.linkedin.com/company/aelvyn" target="_blank" rel="noopener" aria-label="Aelvyn on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg></a>
+    <div class="grid footer-grid">
+      <div class="g1-4 footer-col">
+        <a class="brand" href="index.html" aria-label="Aelvyn, home">
+          <span class="brand-word">aelvyn</span>
+        </a>
+        <p class="footer-ar" lang="ar" dir="rtl">دبي، الإمارات العربية المتحدة</p>
       </div>
-      <div>
-        <h4>Product</h4>
-        <ul><li><a href="index.html#product">Agents</a></li><li><a href="index.html#use-cases">Use cases</a></li><li><a href="index.html#trust">Security</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+      <div class="g5-7 footer-col">
+        <span class="label">Office</span>
+        <p>Office 611, Office Court Building, Oud Metha, Dubai, United Arab Emirates</p>
+        <span class="label">Email</span>
+        <a class="footer-link" href="mailto:hello@aelvyn.com">hello@aelvyn.com</a>
+        <span class="label">Telephone</span>
+        <a class="footer-link" href="tel:+97142353931">+971 4 235 3931</a>
+        <span class="mono">Gulf Standard Time, UTC+4.</span>
       </div>
-      <div>
-        <h4>Company</h4>
-        <ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
+      <div class="g8-9 footer-col">
+        <span class="label">Pages</span>
         <ul>
-          <li><a href="mailto:hello@aelvyn.com">hello@aelvyn.com</a></li>
-          <li><a href="tel:+97142353931">+971 4 235 3931</a></li>
-          <li>Office 611, Office Court Building<br>Oud Metha, Dubai, UAE</li>
+          <li><a class="footer-link" href="index.html">Home</a></li>
+          <li><a class="footer-link" href="about.html">About</a></li>
+          <li><a class="footer-link" href="blog.html">Notes</a></li>
+          <li><a class="footer-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="g10-12 footer-col">
+        <span class="label">Legal</span>
+        <ul>
+          <li><a class="footer-link" href="privacy.html">Privacy</a></li>
+          <li><a class="footer-link" href="terms.html">Terms</a></li>
+        </ul>
+        <span class="label">Elsewhere</span>
+        <ul>
+          <li><a class="footer-link" href="https://www.linkedin.com/company/aelvyn" rel="noopener">LinkedIn</a></li>
         </ul>
       </div>
     </div>
-    <div class="copyright">© <span id="year">2026</span> Aelvyn. All rights reserved.</div>
+    <div class="footer-bottom">
+      <span>© 2026 Aelvyn. Dubai, United Arab Emirates.</span>
+      <span class="end">End of record</span>
+    </div>
   </div>
 </footer>
 

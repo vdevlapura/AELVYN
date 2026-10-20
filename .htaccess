@@ -9,6 +9,13 @@ RewriteRule ^ https://aelvyn.com%{REQUEST_URI} [L,R=301]
 # Hide the internal git folder if the site is deployed from GitHub
 RedirectMatch 404 /\.git
 
+# The brand/ folder holds logo and banner source files for internal use.
+# It is kept in the repository but must not be served.
+RedirectMatch 404 ^/brand/
+
+# Markdown files are repository notes, not pages
+RedirectMatch 404 \.md$
+
 # Custom not-found page
 ErrorDocument 404 /404.html
 
