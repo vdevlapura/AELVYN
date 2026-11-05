@@ -1,25 +1,25 @@
 /* Aelvyn, aelvyn.com. One stylesheet for every page.
-   Direction: an editorial ledger. Warm paper, deep ink, a display serif, hairline rules, numbered entries.
-   Rules are the only containers. No shadows, no gradients, no icons, no cards. */
+   Direction: clean white and indigo. One sans family (Geist), cool greys, Aelvyn indigo as the only accent,
+   numbered sections and hairline rules for structure, product previews set as real software cards. */
 
 :root {
   /* PAPER (surfaces). Three values do all the elevation. No shadows, no gradients, no tints as decoration. */
-  --paper:    #F5F1EA; /* page background on every page. Warm, not yellow. */
-  --paper-2:  #EDE7DB; /* recessed band: sections 05 and 09, table header rows, form field backgrounds, blog row hover */
-  --paper-3:  #FBF9F5; /* raised sheet: the invoice document, the support reply card, the form sheet, the map frame */
+  --paper:    #FFFFFF; /* page background on every page. Warm, not yellow. */
+  --paper-2:  #F6F7F9; /* recessed band: sections 05 and 09, table header rows, form field backgrounds, blog row hover */
+  --paper-3:  #FFFFFF; /* raised sheet: the invoice document, the support reply card, the form sheet, the map frame */
 
   /* INK (text). */
-  --ink:      #17150F; /* headings, primary text, the section 03 background.      15.8:1 on paper */
-  --ink-2:    #4A463F; /* body copy.                                               9.2:1 on paper */
-  --ink-3:    #5A544E; /* mono labels, captions, eyebrows, footer small print.     6.6:1 on paper, 6.1:1 on paper-2, 7.1:1 on paper-3. Never below 12px. Never for paragraphs. */
-  --on-ink:   #F5F1EA; /* text on the ink section (the paper colour, so the inversion reads as the same sheet turned over) */
-  --on-ink-2: #BDB6A5; /* secondary text on ink.                                   7.8:1 on ink */
-  --ink-rule: #2A2721; /* hairlines on the ink section */
+  --ink:      #0B0B12; /* headings, primary text, the section 03 background.      15.8:1 on paper */
+  --ink-2:    #444756; /* body copy.                                               9.2:1 on paper */
+  --ink-3:    #5D6070; /* mono labels, captions, eyebrows, footer small print.     6.6:1 on paper, 6.1:1 on paper-2, 7.1:1 on paper-3. Never below 12px. Never for paragraphs. */
+  --on-ink:   #FFFFFF; /* text on the ink section (the paper colour, so the inversion reads as the same sheet turned over) */
+  --on-ink-2: #B4B7C6; /* secondary text on ink.                                   7.8:1 on ink */
+  --ink-rule: #262838; /* hairlines on the ink section */
 
   /* RULES. The only container on the site. */
-  --rule:        #D8D0C2; /* 1px hairlines between rows, inside tables, under head rows */
-  --rule-strong: #A89F8F; /* 1px under the header, above the footer, the sheet frame, link underlines */
-  --field-border: #8C836F; /* form field borders only: 3.3:1 on paper, 3.6:1 on paper-3, so the field edge meets WCAG 1.4.11 */
+  --rule:        #E6E7EC; /* 1px hairlines between rows, inside tables, under head rows */
+  --rule-strong: #CDD0D8; /* 1px under the header, above the footer, the sheet frame, link underlines */
+  --field-border: #8A8E9C; /* form field borders only: 3.3:1 on paper, 3.6:1 on paper-3, so the field edge meets WCAG 1.4.11 */
 
   /* ACCENT. THE COLOUR RULE: one deep ink blue, and it appears only where a person decides or must look.
      Permitted uses, and no others:
@@ -32,19 +32,19 @@
        7. the signature stroke under "the signature." in the hero: the one line the person draws
      Never as a background wash, tint, gradient, icon tile, eyebrow colour, link colour at rest, border or decoration.
      The wordmark is type only; no logo mark is rendered in the pages (the mark SVG remains the favicon). */
-  --accent:        #223B8F; /* ink blue. 8.9:1 on paper, 10.0:1 with white text */
-  --accent-ink:    #182666; /* hover and pressed state of accent elements */
-  --accent-on-ink: #AEB8F0; /* "Now" marker and the section number inside the ink section. 9.5:1 on ink */
+  --accent:        #4F46E5; /* ink blue. 8.9:1 on paper, 10.0:1 with white text */
+  --accent-ink:    #4338CA; /* hover and pressed state of accent elements */
+  --accent-on-ink: #A5B4FC; /* "Now" marker and the section number inside the ink section. 9.5:1 on ink */
 
   /* STATUS. Always paired with a word. Never a dot alone. Never used for decoration. */
   --approved:    #1E6B3C; --approved-bg: #E3EEE4; /* "Approved", "Done", "Matched" */
-  --pending:     #7A4F00; --pending-bg:  #F6E8C8; /* "Awaiting your approval", "In progress" */
+  --pending:     #7A4F00; --pending-bg:  #FEF3C7; /* "Awaiting your approval", "In progress" */
   --declined:    #8F2D2D; --declined-bg: #F3E3E1; /* "Returned", "Flagged" */
 
   /* TYPE FAMILIES */
-  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
-  --font-text:    "IBM Plex Sans", -apple-system, "Segoe UI", Arial, sans-serif;
-  --font-mono:    "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-display: "Geist", -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-text:    "Geist", -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-mono:    "Geist Mono", "SFMono-Regular", Menlo, Consolas, monospace;
   --font-arabic:  "IBM Plex Sans Arabic", "Noto Naskh Arabic", "Geeza Pro", sans-serif;
 
   /* TYPE SCALE (size / line-height / tracking). Desktop values; phone values in the mobile section. */
@@ -74,7 +74,7 @@
   --container: 1200px; --gutter: 24px; --side: 24px;  /* phone: gutter 16px, side 16px */
 
   /* RADII. 2px on buttons, inputs, chips and sheets. 0 everywhere else. The logo mark is fixed. */
-  --radius: 2px;
+  --radius: 8px;
 
   /* MOTION. One duration, one curve. */
   --t: 240ms; --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -1165,3 +1165,41 @@ blockquote { margin: 0; }
   .footer-bottom { flex-direction: column; }
   .footer-ar { text-align: right; }
 }
+
+
+/* ------------------------------------------------------------------ */
+/* Clean white + indigo layer                                          */
+/* ------------------------------------------------------------------ */
+body { font-feature-settings: "ss01", "cv11"; }
+h1, h2, h3, h4, .statement, .row .row-title.serif, .qa summary .q, .post-title { font-weight: 600; letter-spacing: -0.03em; }
+h3, .row .row-title.serif, .qa summary .q { letter-spacing: -0.015em; }
+h1.display { letter-spacing: -0.045em; line-height: 1.02; font-weight: 650; }
+h1.display em, .display em { font-style: normal; font-weight: inherit; color: var(--accent); }
+.pullquote, .closing { font-style: normal; font-weight: 600; letter-spacing: -0.02em; }
+
+/* Wordmark: the logo mark plus the word, like the favicon */
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand-mark { width: 28px; height: 28px; border-radius: 7px; display: block; flex: none; }
+.brand-word { font-weight: 650; letter-spacing: -0.04em; }
+.brand-word::after { content: none; }
+
+/* Buttons: solid indigo primary, quiet secondary */
+.btn { border-radius: 8px; }
+.btn-primary { box-shadow: 0 1px 2px rgba(16, 24, 40, .08), inset 0 1px 0 rgba(255, 255, 255, .12); }
+.btn-secondary { border-color: var(--rule-strong); background: #fff; }
+.btn-secondary:hover { border-color: var(--ink); }
+
+/* Product previews look like software, not paper */
+.sheet {
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 12px 32px -8px rgba(16, 24, 40, .10);
+}
+.section-ink .sheet, .ink .sheet { box-shadow: none; }
+
+/* Recessed bands are cool grey, not beige */
+.band, .section-alt { background: var(--paper-2); }
+
+/* Masthead row: quieter, less editorial */
+.masthead { letter-spacing: 0.04em; color: var(--ink-3); }
