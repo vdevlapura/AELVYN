@@ -1203,3 +1203,10 @@ h1.display em, .display em { font-style: normal; font-weight: inherit; color: va
 
 /* Masthead row: quieter, less editorial */
 .masthead { letter-spacing: 0.04em; color: var(--ink-3); }
+
+/* Founder card (About) */
+.founder-card { display: flex; gap: var(--s-3); align-items: flex-start; border: 1px solid var(--rule); border-radius: 14px; padding: var(--s-4); background: #fff; box-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 12px 32px -8px rgba(16, 24, 40, .10); }
+.founder-initials { flex: none; width: 64px; height: 64px; border-radius: 50%; background: #EEF0FF; color: var(--accent-ink); display: grid; place-items: center; font-weight: 650; font-size: 22px; letter-spacing: -0.02em; }
+.founder-name { margin: 0; font-weight: 650; font-size: 22px; line-height: 28px; letter-spacing: -0.02em; color: var(--ink); }
+.founder-role { margin: 2px 0 0; color: var(--ink-3); font-size: var(--fs-small); }
+@media (max-width: 719.98px) { .founder-card { flex-direction: column; padding: var(--s-3); } }
